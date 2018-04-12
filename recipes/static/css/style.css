@@ -1,0 +1,93 @@
+a {
+	color: yellow;
+  	text-decoration: none;
+  	font-size: 120%;
+}
+a:hover{
+	color: red;
+}
+.title{
+	font-size: 200%;
+	padding: 0px;
+	color: yellow;
+}
+body{
+	background-color: #ecf7a7;
+	background-image: url('../foodbanner2.jpg');
+    background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+.mainDiv{
+	height: auto;
+	padding-top: 10%;
+	color: #FAA802;
+	padding-bottom: 15%;
+}
+.mainDiv h1 {
+	color: yellow;
+
+}
+.mainDiv p {
+	color: yellow;
+	font-size: 150%;
+
+}
+
+.addDiv{
+	height: 730px;
+	padding-top: 12%;
+}
+.editDiv{
+	height: 650px;
+	padding-top: 12%;
+}
+hr{
+	margin-top: 20px;
+}
+.button{
+	width: 100px; 
+	height: 50px;
+	border:1px solid red;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #FAA802;
+	color: brown!important;
+}
+.textBox{
+	width: 320px;
+	height: 30px;
+}
+label{
+	color: #FAA802;
+	font-size: 150%;
+}
+.buttonSubmit{
+	width: 250px; 
+	height: 42px;
+	border:1px solid red;
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #FAA802;
+	color: brown!important;
+	font-size: 120%;
+
+}
+.headFootDiv{
+	background-color: #FAA802;
+	height: 55px;
+}
+.headFootDiv p{
+ color: black;
+}
+ul{
+	font-size: 150%;
+	margin-left: -30px;
+	color: white;
+}
+header{
+	background-color: #FAA802;
+	padding-top: 20px;
+}

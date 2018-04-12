@@ -1,0 +1,12 @@
+{% include 'partials/header.html' %}
+    <div class="mainDiv">
+    	<p>Add Your Special Recipes With Us..</p>
+    	<a href="/recipes/add" class="button">Add Your Recipe</a><br><br><hr>
+    	<p style="color: #f95a1a;font-size: 200%;margin: 10px;">Explore Recipe List</p>
+	    <ul>
+	      {% for recipe in recipes %}
+	        <li><a href="/recipes/details/{{recipe.id}}">{{recipe.recipe_name}}</a></li>
+	      {% endfor %}
+	    </ul>
+	   </div>
+{% include 'partials/footer.html' %}

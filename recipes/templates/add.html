@@ -1,0 +1,17 @@
+{% include 'partials/header.html' %}
+<div class="addDiv">
+	<p class="title">Add Your Recipe</p>
+<form action="{% url 'add' %}" method="post">
+{% csrf_token %}
+  <label for="title">Recipe Name</label><br>
+  <input class="textBox" placeholder="Enter Recipe Name.." type="text" name="title" id="title" />
+  <br><br>
+  <label for="text">Ingredients and Procedure</label><br>
+  <textarea class="" name="text" placeholder="Enter Ingredients and Procedure.." id="text" rows="15" cols="50"></textarea>
+  <br><br>
+  <input class="buttonSubmit" type="submit" value="Submit" />
+</form>
+<br>
+<a href="/recipes">Go Back to Homepage</a>
+</div>
+{% include 'partials/footer.html' %}

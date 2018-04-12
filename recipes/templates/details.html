@@ -1,0 +1,16 @@
+{% include 'partials/header.html' %}
+<div class="mainDiv">
+  
+  <br>
+  <h1>{{recipe.recipe_name}}</h1>
+  <p>{{recipe.recipe_items}}</p>
+  <br>
+  Created on {{recipe.created_at}}
+
+  <br><br><br><br>
+  
+  <a href="/recipes/edit/{{recipe.id}}" class="button">Edit Recipe</a>&nbsp&nbsp&nbsp
+  <a href="/recipes/delete/{{recipe.id}}" class="button">Delete Recipe</a><br><br><br>
+  <a href="/recipes">Go Back to Homepage</a>
+</div>
+{% include 'partials/footer.html' %}

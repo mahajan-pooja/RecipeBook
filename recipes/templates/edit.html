@@ -1,0 +1,19 @@
+{% include 'partials/header.html' %}
+<div class="editDiv">
+	<p class="title">Update Recipe</p>
+<form method="post">
+{% csrf_token %}
+{{ form.errors }}
+{{ form.non_field_errors }}
+  <label for="id_recipe_name">Recipe Name</label><br>
+  <input class="textBox" type="text" name="recipe_name" id="title" value="{{recipe.recipe_name}}" />
+  <br><br>
+  <label for="id_recipe_items">Ingredients</label><br>
+  <textarea class="" name="recipe_items" id="text" rows="9" cols="52">{{recipe.recipe_items}}</textarea>
+  <br><br>
+  <input class="buttonSubmit" type="submit" value="Submit" />
+</form>
+<br>
+<a href="/recipes">Go Back to Homepage</a>
+</div>
+{% include 'partials/footer.html' %}
